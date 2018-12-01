@@ -10,6 +10,6 @@ public class IsometricCameraFollow : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position = trans.position + new Vector3(2.7f, 4.5f, -2.7f);
+        transform.position = trans.position + new Vector3(0.0f, 4.5f, -2.7f);
 	}
 }
