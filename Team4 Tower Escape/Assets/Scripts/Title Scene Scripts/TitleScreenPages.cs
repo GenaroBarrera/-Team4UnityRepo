@@ -43,7 +43,7 @@ public class TitleScreenPages : MonoBehaviour {
 
     public void StartGame()
     {
-        SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
+        SceneManager.LoadScene("TestScene", LoadSceneMode.Single);
     }
 
     public void Credits()
