@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class CurrentWords : MonoBehaviour {
@@ -28,21 +29,35 @@ public class CurrentWords : MonoBehaviour {
         {
             words.alignment = TextAnchor.MiddleRight;
             words.color = Color.red;
-            words.text = "Finally awake, I see.";
+            words.text = "Unknown Voice: Finally awake, I see.";
         }
         
         if (conversationTrigger == 1)
         {
             words.alignment = TextAnchor.MiddleLeft;
             words.color = Color.white;
-            words.text = "Who's there?";
+            words.text = "Player: Who's there?";
         }
 
         if (conversationTrigger == 2)
         {
             words.alignment = TextAnchor.MiddleLeft;
             words.color = Color.white;
-            words.text = "And where am I?";
+            words.text = "Player: And where am I?";
         }
+
+        if (conversationTrigger == 3)
+        {
+            words.alignment = TextAnchor.MiddleLeft;
+            words.color = Color.red;
+            words.text = "Unknown Voice: You're in the Tower!";
+        }
+
+        if (conversationTrigger == 4)
+        {
+            SceneManager.LoadScene("Floor12", LoadSceneMode.Single); //load the 12th Floor
+        }
+
+
     }
 }

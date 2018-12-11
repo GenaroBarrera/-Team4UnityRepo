@@ -43,7 +43,7 @@ public class TitleScreenPages : MonoBehaviour {
 
     public void StartGame()
     {
-        SceneManager.LoadScene("TestScene", LoadSceneMode.Single);
+        SceneManager.LoadScene("TopFloorScene", LoadSceneMode.Single); //load the intro dialog scene
     }
 
     public void Credits()
